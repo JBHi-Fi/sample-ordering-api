@@ -1,0 +1,20 @@
+POST http://localhost:7071/api/ProcessOrder
+Content-Type: application/json
+
+{
+    "OrderId": "ORD-123456",
+    "CustomerEmail": "customer@example.com",
+    "Items": [
+        {
+            "ProductId": "PRODUCT-001",
+            "Quantity": 2
+        }
+    ],
+    "PaymentInfo": {
+        "Amount": 99.99,
+        "Currency": "AUD",
+        "CardNumber": "4111111111111111",
+        "ExpiryDate": "12/25",
+        "CVV": "123"
+    }
+}
